@@ -198,11 +198,6 @@ namespace UnitTestProject
                     return;
                 }
             }
-            catch (FileNameAlreadyExistsException e)
-            {
-                Console.WriteLine(String.Format("Exception {0} in method {1}", e.GetBaseException(), MethodBase.GetCurrentMethod().Name));
-                return;
-            }
             catch (NullReferenceException e)
             {
                 Console.WriteLine(String.Format("Exception {0} in method {1}", e.GetBaseException(), MethodBase.GetCurrentMethod().Name));
